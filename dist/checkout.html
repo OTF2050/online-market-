@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta name="description" content="هذا متجر الكتروني">
+        <script type="text/html"  src="{require(index.js)}"></script>
+        <title>CHECKOUT #JUST</title>
+    <script defer src="main.js"></script><link href="css/style.css" rel="stylesheet"></head>
+    <body>
+        <div class="container-fluid">
+            <!-- This is the top part -->
+            <div class="row">
+                <nav class="navbar custom-navbar navbar-expand-lg">
+                    <div class="navbar-header">
+                        <a href="./index.html" class="navbar-brand">
+                           <img src="IMG/1.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <img src="IMG/icons8-menu.gif" alt="">
+                    </div>
+                    <div class="container">
+                    <form class="form-inline">
+                        <input type="search" class="form-control custom-form-control" placeholder="search..">
+                        <div class="dropdown catogeory">
+                            <a href="" class="nav-link dropdown-toggle btn btn-dark btn-chek " role="button" data-toggle="dropdown" aria-expanded="false">
+                                choose class
+                            </a>
+                            <ul class="dropdown-menu cust-dropdown">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="search-category" value="mens">
+                                        MENS
+                                    </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="search-category" value="mens">
+                                        WOMENS
+                                    </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="search-category" value="mens">
+                                        EXSIVE
+                                    </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="search-category" value="mens">
+                                        DEALS
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="./search.html" class="btn search-button" type="submit">search</a>
+                    </from>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-item active">
+                            <a href="./index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="navbar-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" aria-expanded="false" role="button" data-toggle="dropdown">STORE</a>
+                            <ul class="dropdown-menu cust-dropdown-menu">
+                                <li>
+                                    <a href="" class="dropdown-item">merch</a>
+                                    <a href="" class="dropdown-item">books</a>
+                                    <a href="" class="dropdown-item">apps</a>
+                                    <a href="" class="dropdown-item">coming soon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="" class="nav-link">DEALS</a>
+                        </li>
+                        
+                        <li class="navbar-item">
+                            <a href="./contact.html" class="nav-link">CONTACT US</a>
+                        </li>
+                      
+                        <li class="nav-item">
+                          <a href="./checkout.html" class="nav-link btn custom-button">
+                            <img src="IMG/icons8-fast-cart-24.png" alt=""></a>
+                          </li>
+                    </ul>
+                  </form>
+    
+                    </div>
+                </nav>
+            </div>
+            <!-- this is the end of the top part -->
+            <div class="container">
+                <!-- breadcrumb -->
+                <div class="row">
+                    <ol class="breadcrumb custom-breadcrumb">
+                        <li>
+                            <a href=".">HOME</a>
+                        </li>
+                        <li class="active">CART</li>
+                    </ol>
+                </div>
+                <!-- The end of breadcrumb -->
+                <div class="borders-bettween">
+                    <!-- buy cart section -->
+                    <div class="row ">
+                        <h1 class="custom-heading">BUY CART</h1>
+                        <form  id="form-checkout">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>PRODUCT</th>
+                                        <th>PRICE</th>
+                                        <th>AMOUNT</th>
+                                        <th>total price</th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr  data-product-info  data-product-price="400">
+                                        <td>
+                                            <div class="media custom-media">
+                                                <img src="IMG/lacoste_1.jpg" alt="تي شيرت رجالي من لا كوست">
+                                                <div class="media-body">
+                                                    <h4>T-SHIRT lacoste</h4>
+                                                    <div class="custom-text-muted">
+                                                        MEN T-SHIRT
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            400$
+                                        </td>
+                                        <td>
+                                            <select name="quantity1" class="form-control custom-form-control quantity" data-product-quantity>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3" selected>3</option>
+                                            </select>
+                                        </td>
+                                        <td class="total-price-for-product ">
+                                            1200$
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger custom-btn custom-btn-danger" data-remove-from-cart>
+                                                DELET
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr  class="price-for-product1" data-product-info  data-product-price="300">
+                                        <td>
+                                            <div class="media custom-media">
+                                                <img src="IMG/tshirt.jpg" alt="">
+                                                <div class="media-body">
+                                                    <h4>adidas T-SHIRT</h4>
+                                                    <div class="custom-text-muted">
+                                                         MEN-T-SHIRT
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            300$
+                                        </td>
+                                        <td>
+                                            <select name="quantity1" class="form-control custom-form-control quantity" data-product-quantity>
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </td>
+                                        <td class="total-price-for-product">
+                                            300$
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger custom-btn custom-btn-danger"  data-remove-from-cart>
+                                                 DELET
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="total-price">
+                                            <span class="custom-text-muted ">
+                                                <span class="custom-text-muted ">
+                                                    total-price-for-all:
+                                                </span>
+                                                <span id="total-price-for-all">1500 </span>
+                                                    $                                    
+                                            </span>    
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <a href="./payment.html"  type="submit"  class="btn custom-btn-primary2 custom-btn-with-icon">
+                                <span >
+                                    CONTINUE BUYING PROESS
+                                    <i class="fas fa-dollar-sign"></i>
+                                </span>
+                            </a>
+                        </form>
+                    </a>
+                    <!-- The end of buy cart section -->
+                    <!-- suggest to you  -->
+                    <div class="row suggestions">
+                        <h3 class="custom-heading col-12">
+                            suggest TO YOU
+                        </h3>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4">
+                                <div class="card  custom-thumbnail">
+                                    <div class="sale">50%</div>
+                                    <div class="overlay">
+                                        <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                               add  to cart
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                    <img src="IMG/most_sold_2.jpg"  alt="">
+                                    <div class="card-body">
+                                        <div class="clearfix">
+                                            <h4 class="float-right">FLORA-TSHIRT</h4>
+                                            <div class="price float-left">
+                                                200$
+                                            </div>
+                                        </div>    
+                                        <div class="rating">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button class="btn btn-default custom-btn add-to-cart-btn d-lg-none d-block float-left">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <div class="card  custom-thumbnail">
+                                    <div class="sale">50%</div>
+                                    <div class="overlay">
+                                        <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                               add  to cart
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                    <img src="IMG/most_sold_1.jpg"  alt="شير بلوز من نافي">
+                                    <div class="card-body">
+                                        <div class="clearfix">
+                                            <h4 class="float-right">FLORA-TSHIRT</h4>
+                                            <div class="price float-left">
+                                                500$
+                                            </div>
+                                        </div>    
+                                        <div class="rating">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="clearfix">
+                                            <button class="btn btn-default custom-btn add-to-cart-btn d-lg-none d-block float-left">
+                                                إضافة للعربة
+                                                <i class="fas fa-cart-plus"></i>
+                                            </button>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <div class="card  custom-thumbnail">
+                                    <div class="sale">50%</div>
+                                    <div class="overlay">
+                                        <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                               add  to cart
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                    <img src="IMG/most_sold_3.jpg"  alt="FLORA T-SHIRT">
+                                    <div class="card-body">
+                                        <div class="clearfix">
+                                            <h4 class="float-right">FLORA T-SHIRT</h4>
+                                            <div class="price float-left">
+                                                450$
+                                            </div>
+                                        </div>    
+                                        <div class="rating">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button class="btn btn-default custom-btn add-to-cart-btn d-lg-none d-block float-left">
+                                            إضافة للعربة
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                                <div class="card  custom-thumbnail">
+                                    <div class="sale">50%</div>
+                                    <div class="overlay">
+                                        <button class="btn btn-secondary custom-btn add-to-cart-btn">
+                                               add  to cart
+                                            <i class="fas fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                    <img src="IMG/hm_3.jpg"  alt="FLORA T-SHIRT">
+                                    <div class="card-body">
+                                        <div class="clearfix">
+                                            <h4 class="float-right">FLORA T-SHIRT</h4>
+                                            <div class="price float-left">
+                                            25$
+                                            </div>
+                                        </div>    
+                                        <div class="rating">
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star active"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The end of  suggest to you  -->
+                </div>    
+            </div>    
+        </div>
+    </body>
+</html>
