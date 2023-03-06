@@ -75,7 +75,7 @@ $(window).on('load', function () {
       });
 
       // حذث السعر لكل المنتجات في الصفحة
-      $('#total-price-for-all-products').text(totalPriceForAllProducts + '$');
+      $('#total-price-for-all-products').text(totalPriceForAllProducts);
     }
     
     
